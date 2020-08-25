@@ -29,7 +29,7 @@ You will need to get your own APIs for AudioTag and Last.fm to use the function.
 Replace the key variables (at_key, lfm_key) with the keys generated for your APIs.
 '''
 # API info for AudioTag (https://audiotag.info/apisection)
-at_url = 'https://audiotag.info/api/'
+at_url = 'https://audiotag.info/api'
 at_key = 'XXX'
 
 # API info for Last.fm (https://www.last.fm/api)
