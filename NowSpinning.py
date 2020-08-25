@@ -142,6 +142,8 @@ def main( ):
                     plt.rcParams['toolbar'] = 'None'
                     plt.plot()
                     plt.ion()
+                    mng = plt.get_current_fig_manager()
+                    mng.resize(*mng.window.maxsize())
                     plt.show()
                     plt.axis('off')
                     plt.pause(0.001) # 1 ms buffer to release hold
@@ -328,6 +330,8 @@ def main( ):
 
         # plot the panels!
         plt.ion()
+        mng = plt.get_current_fig_manager()
+        mng.resize(*mng.window.maxsize())
         plt.show()
         plt.pause(0.001) # 1 ms buffer to release hold
 
@@ -343,6 +347,8 @@ if __name__ == "__main__":
     plt.rcParams['toolbar'] = 'None'
     plt.plot()
     plt.ion()
+    mng = plt.get_current_fig_manager()
+    mng.resize(*mng.window.maxsize())
     plt.show()
     plt.axis('off')
     plt.pause(0.001) # 1 ms buffer to release hold
